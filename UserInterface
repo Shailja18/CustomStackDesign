@@ -1,0 +1,24 @@
+public class UserInterface {
+
+    public static void main(String args[]) throws StackOverFlowException,StackUnderFlowException {
+
+        CustomStack stack=new CustomStack(3);
+        stack.push(10);
+        stack.push(20);
+        stack.push(50);
+        stack.pop();
+
+        stack.peek();
+        stack.display();
+
+        DynamicStack dynamicStack=new DynamicStack(2);
+        dynamicStack.push(2);
+        dynamicStack.push(3);
+        dynamicStack.push(4);
+        System.out.println(dynamicStack.size());
+    }
+
+
+
+
+}
